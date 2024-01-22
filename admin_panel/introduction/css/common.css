@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+:root {
+  --main: #42b8a2;
+  --yellow:#f7e14a;
+  --red:#ff0000;
+  --gray:#dbdbdb;
+  --black:#010101;
+}
+
+body {background: #f3f3f3;}
+.wrap {max-width:750px; height:100%; background:#fff; margin:0 auto; position:relative; letter-spacing: -0.5px; box-sizing: border-box}
+
+
+
+/* 서비스 리스트 */
+.list_wrap {}
+.list_wrap ul .item {padding-top:15px; border-bottom:1px solid #f4f4f4;}
+.list_wrap ul .item .top_info .thumb_card {position:relative; width:130px; height:90px; float:left; overflow: hidden; border-radius: 3px; margin-right:10px;}
+.list_wrap ul .item .top_info .thumb_card img {width: 100% !important; height:auto!important; position: absolute !important;top: -100% !important;right: -100% !important;bottom: -100% !important;left: -100% !important;margin: auto !important;}
+.list_wrap ul .item .top_info .info_card {overflow: hidden;}
+.list_wrap ul .item .top_info .info_card .item_tit p {font-size: 13px; color:#010101; line-height: 1.4;}
+.list_wrap ul .item .top_info .info_card .price {padding:5px 0}
+.list_wrap ul .item .top_info .info_card .price strong {letter-spacing: -1px; color:#010101;}
+.list_wrap ul .item .top_info .info_card .price span {font-size:15px;}
+.list_wrap ul .item .top_info .info_card .info_name p {font-size: 10px; color:#838383;}
+.bottom_info {clear: both; padding:12px 0 15px; position:relative;}
+.member_list_wrap ul {display: inline-block; margin-right:5px;}
+.member_list_wrap ul li {position:relative; overflow:hidden; display:inline-block; width:23px; height:23px; border-radius: 50%;}
+.member_list_wrap ul li span {width: 23px; height: 23px; display: inline-block; box-sizing: border-box;}
+/*.member_list_wrap ul li img {width:100%; height:auto; vertical-align: top; position: absolute !important; top: -100% !important; right: -100% !important; bottom: -100% !important;left: -100% !important;margin: auto !important;}*/
+.member_list_wrap .mem_count {display: inline-block; font-size: 11px; font-weight: 500; vertical-align: initial;}
+.member_list_wrap .mem_count .total {color:#b3b3b3;}
+.member_list_wrap .resale {display: inline-block}
+.member_list_wrap .resale span {font-size:12px; color:var(--red); vertical-align: initial}
+.member_list_wrap .encore {display:inline-block; position:relative; width:105px; height:20px; padding:3px 11px; margin-left:10px; background:#ffb400; border-radius: 10px; box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1)}
+.member_list_wrap .encore:before {content: ''; width:7px; height:12px; background: url("../images/tale.png") no-repeat; background-size: 7px 7px; position:absolute; top:7px; left:-6px; display: inline-block;}
+.member_list_wrap .encore span {font-size: 11px; color:#FFF;}
+.time_limit {position:absolute; right:0; bottom:17px; color:var(--main); font-size: 12px;}
+
+/*공구 상세*/
+.transparent {background: transparent}
+.app_bar_area .app_bar_left .link_app_bar .white {background: url('../images/ic_back_white.png') no-repeat 0 1px;background-size: 30px 30px;}
+.app_bar_area .app_bar_right button:nth-child(2) {margin-left: 10px}
+.app_bar_area .app_bar_right .link_app_bar .ic_like {background: url('../images/ic_like.png') no-repeat 1px 1px;background-size: 30px 30px;}
+.app_bar_area .app_bar_right .link_app_bar .ic_share {background: url('../images/ic_share.png') no-repeat 1px 1px;background-size: 30px 30px;}
+.item_detail {position:relative;}
+.item_titimage {position:relative; background: no-repeat; background-size: 100%;}
+.item_titimage:before {position: absolute;top: 0;left: 0;right: 0;z-index: 2;overflow: hidden;display: block;content: '';width: 100%;padding-top: 25%;background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(49, 49, 49, 0.44));}
+.swiper-container {width:100%; height:300px;}
+.swiper-container .swiper-slide img {position: absolute;width: 100%;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+.swiper-pagination {right:20px}
+.swiper-pagination-bullet {width:5px; height:5px}
+.swiper-pagination-bullet-active {background: #fff}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {border:2px solid #FFF}
+.seller_card {position:absolute; bottom:15px; left:15px; z-index: 1}
+.seller_card .seller_img {width:30px; height:30px; display: inline-block; border: 1px solid #FFF; border-radius:50%; margin-right: 8px;}
+.seller_card .seller_name {display: inline-block; color:#fff; vertical-align: middle; font-size: 12px;}
+.item_titinfo {position:relative; padding:15px 20px; border-bottom: 1px solid #ededed; font-size: 0}
+.item_titinfo .item_tit p {font-size: 20px; line-height: 1.4}
+.item_titinfo .price {width:55%; display:inline-block; font-size: 20px; padding-top:10px;}
+.item_titinfo .count_wrap {width:45%; display: inline-block; position:relative; margin-top: 17px;}
+.item_titinfo .count_wrap .pick_date {display: inline-block; color:#6d6d6d; font-size: 13px;}
+.item_titinfo .count_wrap .time_limit {display:inline-block; position: absolute; top:1px; right:0;}
+.item_titinfo .count_wrap .time_limit span {color:var(--main);}
+.item_getinfo {padding:15px 20px; border:1px solid #ededed}
+.slider_wrap p {font-size: 13px; padding-bottom: 10px}
+.slider_wrap p span {color:var(--red)}
+.slider_wrap .progressbar {position:relative; height:12px; width:100%; border:1px solid #dddddd; background:#e8e8e8; border-radius: 30px; }
+.slider_wrap .progress-label {width:20%; height:12px; display:block; position:absolute; left:-1px; top:-1px; background: var(--main); border:1px solid #dddddd; border-radius: 30px;}
+.slider_wrap .text {display: flex; justify-content: space-between; margin-top: 3px}
+.slider_wrap .text span {font-size: 10px}
+.item_getinfo .member_list_wrap {position:relative; padding:25px 0 10px}
+.item_getinfo .member_list_wrap .mem_count {position:absolute; right:0; bottom:12px; display: inline-block; font-size: 14px; font-weight: 500;}
+.item_getinfo .member_list_wrap .mem_count .buy {color:var(--main);}
+.item_desc {padding:20px 15px; letter-spacing: -0.5px}
+.noti_wrap {padding:20px 15px 80px; background: #f0f0f0}
+.noti_wrap p {color:#565656;}
+.noti_wrap ul li {color:#565656; font-size: 11px}
+.join_bar, .intall_bar {position:fixed; bottom:0; left:0; right:0; width:100%; max-width: 750px; margin:0 auto; height:60px; background: #FFF; font-size: 0}
+.join_bar .comment {width:57px; height:60px; background: url("../images/ic_comment.png") center no-repeat; background-size: 29px; border-top:1px solid #ededed;}
+.join_bar .join {width: calc(100%); height:60px; line-height:60px; background: var(--yellow); font-size: 18px; font-weight: 600; text-align: center; border-top:1px solid var(--yellow);}
+.install_bar .join {width:100%; height:60px; line-height:60px; background: var(--yellow); font-size: 18px; font-weight: 600; text-align: center;}

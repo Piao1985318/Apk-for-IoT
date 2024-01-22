@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------
+
+팝플레이스 stylesheet
+작성자 : 조경아 lovelylucia@naver.com
+최초작성일: 2021년 7월 18일
+최종업데이트:
+--------------------------------------------------------*/
+
+/*---------------fonts---------------------*/
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(..//fonts/NotoSansKr/NotoSansKR-Thin.woff2) format('woff2'),
+         url(..//fonts/NotoSansKr/NotoSansKR-Thin.woff) format('woff'),
+         url(..//fonts/NotoSansKr/NotoSansKR-Thin.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(..//fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+         url(../fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+         url(../fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+  }
+  @font-face {
+     font-family: 'Noto Sans KR';
+     font-style: normal;
+     font-weight: 400;
+     src: url(../fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+          url(../fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+          url(../fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+   }
+  @font-face {
+     font-family: 'Noto Sans KR';
+     font-style: normal;
+     font-weight: 500;
+     src: url(../fonts/NotoSansKr/NotoSansKR-Medium.woff2) format('woff2'),
+          url(../fonts/NotoSansKr/NotoSansKR-Medium.woff) format('woff'),
+          url(../fonts/NotoSansKr/NotoSansKR-Medium.otf) format('opentype');
+   }
+  @font-face {
+     font-family: 'Noto Sans KR';
+     font-style: normal;
+     font-weight: 700;
+     src: url(../fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+          url(../fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+          url(../fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+   }
+  @font-face {
+     font-family: 'Noto Sans KR';
+     font-style: normal;
+     font-weight: 900;
+     src: url(../fonts/NotoSansKr/NotoSansKR-Black.woff2) format('woff2'),
+          url(../fonts/NotoSansKr/NotoSansKR-Black.woff) format('woff'),
+          url(../fonts/NotoSansKr/NotoSansKR-Black.otf) format('opentype');
+   } 
+  
+
+/*------------reset css--------------*/
+*{margin:0; padding:0;}
+html,body {height: 100%;  font-family: 'Noto Sans KR';}
+html, body, article, aside, details, figcaption, figure, header, hgroup, menu, div, nav, section, header, table, tbody, tfoot, thead, tr, th, td, article, aside, audio, video ,textarea
+{margin:0;padding:0;border:0;outline:0;font-size:100%;color:#0e141c;vertical-align:middle;background:transparent;
+box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;word-break:keep-all; 
+line-height:1.2em; font-weight:300;}
+*:focus {outline-style: none;}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, canvas, embed, figcaption,  hgroup, menu, nav, output, ruby, summary, time,
+mark{padding:0;margin:0;border:0;-webkit-font-smoothing: antialiased;box-sizing:inherit; line-height:1.2em; font-family:inherit;}
+
+input , button , select{outline-style:none;  -webkit-outline-style:none; -webkit-outline-style:none; -webkit-border-radius: 0;  -ms-border-radius: 0;  border:0; font:inherit;box-sizing:inherit;}
+input:focus{ outline-style: none;}
+input[type="radio"]{background-color:transparent; border:3px solid #ccc;}
+input[type="checkbox"]{background-color:transparent; border:3px solid #ccc;}
+input[type="password"]{font-family:'arial' , sans-serif; color:#000;}
+
+select{font-family:inherit;cursor:pointer; -webkit-appearance:none;-moz-appearance:none;appearance:none; border:1px solid #eee; border-radius:0}
+select::-ms-expand{ /* for IE 11 */display:none}
+
+::placeholder {color: #bdbdbd; font-size: 16px;}
+::-webkit-input-placeholder {color: #bdbdbd;font-size: 16px;}
+:-moz-placeholder {color: #bdbdbd; font-size: 16px;}
+::-moz-placeholder {color: #bdbdbd; font-size: 16px;}
+:-ms-input-placeholder {color: #bdbdbd;font-size: 16px;}
+
+article,aside,details,figcaption,figure,footer,header,menu,summary,hgroup, menu, nav, section{display:block; font-family:inherit;box-sizing:inherit;}
+audio,canvas,progress{display:inline-block}
+progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0} [hidden],template{display:none}
+
+ul, li, dd{list-style:none;padding:0;margin:0;}
+
+span{margin:0;padding:0}
+
+a{margin:0;padding:0;font-size:100%;outline-style:none; -webkit-outline:none;  color:#000;-webkit-outline:none;background-color:transparent;-webkit-text-decoration-skip:objects;vertical-align:baseline;background:transparent;text-decoration:none;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; border:0; }
+a:link, a:visited , a:hover {text-decoration:none}
+a:hover, a:focus, a:active {text-decoration:none;}
+img{border-style:none;vertical-align:middle} 
+hr{box-sizing:content-box;height:0;overflow:visible}
+
+table{border-collapse:collapse;border-spacing:0}
+table caption{display:none}
+td, th{display:table-cell;vertical-align:middle;}
+
+.block{display:block; width:100%;}
+b{font-weight:bold;}
+.pc_only{display:block;}
+.mb_only{display:none;}
+
+/* clifix */
+.clearfix{*zoom:1}
+.clearfix:after{display:block;clear:both;content:''}

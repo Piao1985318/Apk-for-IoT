@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------
+
+팝플레이스 stylesheet
+작성자 : 조경아 lovelylucia@naver.com
+최초작성일: 2021년 7월 18일
+최종업데이트:2021년 8월 2일
+--------------------------------------------------------*/
+
+
+
+/* company */
+body {position:relative}
+img {max-width:100%}
+#wrapper {width:100%; height:100%; position:relative}
+header {position:absolute; top:0; width:100%; height:130px; background: transparent; z-index: 10;}
+.header_inner {max-width: 1280px; height:0; margin:0 auto; padding:0 40px; position: relative; transition: all .3s; } 
+.header_inner h1 {float:left; margin-top: 45px;}
+.header_inner h1 a {display:block; width:220px; height:50px; background: url('../images/raiseduck_logo.png') no-repeat; background-size:contain; text-indent: -9999px;}
+.header_inner .gnb {float: right; margin-top: 55px;  display: block;}
+.header_inner .gnb ul li {display: inline-block;}
+.header_inner .gnb ul li + li  {margin-left: 60px;}
+.header_inner .gnb ul li a {font-size: 16px; color:#444; font-weight: 900; position:relative}
+.header_inner .gnb ul li.on a:after {content: ''; position:absolute; width:100%; height:2px; top:30px; left:0; background: #333;}
+.header_inner .gnb span {display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #999;
+    margin: 7px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.header_inner .nav_open_btn {position:absolute; top:25px; right: 25px; background: transparent; display: none; cursor: pointer;}
+.header_inner.nav_open {background: #FFF;}
+.header_inner.nav_open h1 a {display:inline-block; background:url('../images/logo.png') no-repeat; background-position: -5px 2px; background-size: contain; width:150px; margin: 0 auto;}
+.company_wrap .header_inner.nav_open h1 a {background:url('../images/logo.png') no-repeat; background-size: 145px; background-position: 0 2px}
+.header_inner.nav_open .gnb {display: block;}
+section {width:100%; min-height:830px}
+.company_wrap .main {width:100%; position:relative; display: table; max-height: 910px; min-height:910px; padding-top:130px; background:url('../images/company_main_bg.png') no-repeat center; background-size: cover;}
+.company_wrap .main .inner_visual {position: relative; bottom: 0; max-width: 1280px; width:100%; height: 100%; margin: 0 auto; transform:translateY(37%); box-sizing: border-box;}
+.company_wrap .main .topArea_txt {text-align: left; padding:0 30px}
+.company_wrap .main .topArea_txt h4 {font-size: 36px; font-weight: 700; color:#FFF; margin-bottom: 30px; background: #000; display: inline-block;}
+.company_wrap .main .topArea_txt p {font-size: 24px; color:#FFF; background: #000; display: inline-block; margin-bottom: 13px;}
+.mission_wrap {min-height: 700px; margin-top: 100px;}
+.mission_wrap .inner_visual .imgbox {width:50%;}
+.mission_wrap .inner_visual .imgbox img {padding:0 30px; box-sizing: border-box;}
+.mission_wrap .inner_visual .textbox {width: 50%; box-sizing: border-box;}
+.mission_wrap .inner_visual .textbox h5 {margin-top: 40px;}
+.raise_people_wrap {min-height: 690px;}
+.raise_people_wrap .inner_visual .textbox {width:50%;}
+.raise_people_wrap .inner_visual .textbox h5 {font-size: 40px; font-weight: 700; line-height: 1.8;}
+.raise_people_wrap .inner_visual .textbox h5 em {font-size: 54px;}
+.raise_people_wrap .inner_visual .imgbox {width:50%;}
+.raise_goal_wrap {width:100%; min-height:770px; position:relative; background:url('../images/goal.jpg') no-repeat center; background-size: cover; padding:120px 0;}
+.raise_goal_wrap .inner_visual h2 {font-size: 42px; z-index: 10; color: #FFF; font-weight: 600; text-align: center; text-shadow: 0 2px 1px rgba(0,0,0,0.2); margin-bottom: 50px;}
+.raise_goal_wrap .inner_visual p {color:#FFF; font-size: 24px; text-shadow: 0 2px 1px rgba(0,0,0,0.2); text-align: center; line-height: 1.6; margin-bottom: 25px;}
+footer {background-color: rgba(0, 0, 0, 0.7); position: absolute; bottom:0; width:100%}
+footer .footer_inner {max-width:1280px; padding:50px 50px 40px; margin:0 auto; display: flex; font-size: 0;}
+footer .footer_inner .footer_logo_wrap {width:20%; display: inline-block;}
+footer .footer_inner .footer_logo_wrap a img {margin-top: -5px;}
+footer .footer_inner .co_info {display: inline-block; width:40%; color:#dddddd; font-size: 14px; font-weight: 300;}
+footer .footer_inner .co_info p {margin-bottom: 10px;}
+footer .footer_inner .co_info p span + span {margin-left: 15px;}
+footer .footer_inner .co_info address {font-style: normal;}
+footer .copyright {margin: 20px 0 70px; color:#a5a5a5; font-size: 14px;}
+footer .footer_inner .policy_wrap {display: inline-block; width:40%}
+footer .footer_inner .policy_wrap ul {text-align: center;}
+footer .footer_inner .policy_wrap ul li {display: inline-block; padding:0 15px}
+footer .footer_inner .policy_wrap ul li a {display:inline-block; color:#cbcbcb; font-weight: 500; font-size: 14px;}
+footer .copyright {max-width: 1280px; margin: 0 auto; padding:10px 50px 50px}
+
+/* product */
+.product_wrap {position: relative;}
+.product_wrap h1 a {display:block; background: url('../images/popple_logo.png') no-repeat; background-size: contain;}
+.product_wrap .header_inner.nav_open h1 a {background: url('../images/popple_logo.png') no-repeat; background-size: 140px; margin-top: 25px;}
+.product_wrap .main {width:100%; position:relative; display: table; max-height: 910px; min-height:910px; padding:0 20px}
+.product_wrap .main::before {content:''; display:block; width:60%; min-height:395px; background: url('../images/bg_home1.png') no-repeat; background-size: contain; position: absolute; left: 0; top:0}
+.product_wrap .main .inner_visual {transform:translateY(37%);}
+.product_wrap .main .topArea_txt {text-align: right;}
+.product_wrap .main .topArea_txt p {font-size: 38px; font-weight: 500; color:#414141;}
+.product_wrap .main .topArea_txt h3 {font-size: 68px; font-weight: 700; padding:10px 0; color:#414141;}
+.count_wrap {padding:80px 0} 
+.count_wrap ul {font-size: 0;}
+.count_wrap ul li {width:33.3%; display: inline-block; color:#6c6c6c; text-align: center;}
+.count_wrap ul li dt {font-size: 50px; font-weight: 900;}
+.count_wrap ul li dd {font-size: 20px; font-weight: 600; padding:20px 0}
+.download_wrap {text-align: center;}
+.download_wrap a {display: inline-block; width:300px;}
+.download_wrap a img {max-width: 100%;}
+.download_wrap a + a {margin-left: 20px;}
+.benefit {height:1670px; position:relative}
+.benefit_visual {position: absolute; width:100%; height:100%}
+.benefit_visual .bg01 {content:''; display:block; width:100%; height:100%; background: url('../images/bg_home2.png') no-repeat; background-size: cover; position: absolute; left: 0; top:0}
+.benefit_cont {position:relative; max-width: 1280px; margin: 0 auto; padding:50px 40px; font-size: 0;}
+.benefit_cont .cont_img {width:40%; display: inline-block;}
+.benefit_cont .cont_txt {width:60%; display: inline-block;}
+.benefit_cont .cont_txt h4 {font-size: 38px; font-weight: 500; color:#FFF; margin-bottom: 30px;}
+.benefit_cont .cont_txt p {font-size: 24px; font-weight: 400; color:#FFF; line-height: 1.4;}
+.benefit_cont .slide {width:100%; margin-top: 100px; padding:0 120px}
+.benefit_cont .slide h4 {color:#fffc00; font-size: 54px; font-weight: 700; text-align: center; text-shadow: 0 2px 1px rgba(0,0,0,0.2);}
+.benefit_cont .swiper-container {margin-top: 100px; position:relative; overflow: hidden}
+.benefit_cont .swiper-container .swiper-slide {color:#FFF; font-size: 36px; font-size: 0; overflow: hidden}
+.benefit_cont .swiper-container .swiper-slide .slide_imgbox {width:48%; display: inline-block;}
+.benefit_cont .swiper-container .swiper-slide .slide_imgbox img {max-width:100%}
+.benefit_cont .swiper-container .swiper-slide .slide_textbox {width:52%; display: inline-block; vertical-align: top; margin-top: 10%; letter-spacing: -0.7px;}
+.benefit_cont .swiper-container .swiper-slide .slide_textbox h5 {font-size: 34px; color:#FFF; font-weight: 500; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.15); line-height: 1.6;}
+.swiper-pagination {position: relative}
+.swiper-pagination-bullet {width: 16px; height: 16px; display: inline-block; margin:0 6px; border-radius: 50%; border: 3px solid #FFF; background: transparent; opacity: 1;}
+.swiper-pagination-bullet-active {background: #FFF;}
+.info01 .inner_visual, .info02 .inner_visual {position: relative; bottom: 0; max-width: 1280px; width:100%; height: 100%; margin: 0 auto; padding:0 40px; transform:translateY(-15%); box-sizing: border-box; font-size: 0;}
+.inner_visual {font-size: 0; max-width: 1280px; margin:0 auto; padding:20px}
+.inner_visual .textbox {width:55%; display: inline-block;}
+.inner_visual .textbox h5 {font-size:40px; font-weight: 700; color:#6c6c6c; line-height: 1.4; margin-bottom: 30px;}
+.inner_visual .textbox p {color:#6c6c6c; font-size: 20px; font-weight: 400; line-height: 1.5; margin-bottom: 30px;}
+.inner_visual .imgbox {width:45%; display: inline-block; text-align: right;}
+.inner_visual .imgbox img {max-width: 100%;}
+.info02 .inner_visual .textbox {margin-top: -50px;}
+.info02 .inner_visual .imgbox {text-align: left;}
+.product_footer {position: relative;}
+
+/*.product_wrap footer {position: absolute; bottom: 0; width: 100%; background: rgba(23, 11, 1, 0.9);}*/
+
+/* 이용약관 */
+.page_content, .location_term_content {max-width: 740px; margin:0 auto; padding:50px 15px 70px; box-sizing: border-box;}
+.page_content h1 {font-size: 26px; font-weight: 700;}
+.page_content h3 {font-size: 18px; font-weight: 600; margin:30px 0 20px}
+.page_content p {font-size: 18px; line-height: 1.8; padding:7px 0}
+.page_content ul li, .page_content ol li {line-height: 1.8; padding:7px 0}
+.page_content ul li ol {padding-left:30px; margin-top: 10px;}
+.privacy_wrap h1 {margin-bottom: 20px;}
+.privacy_wrap .indent {text-indent: 20px!important;}
+.privacy_wrap .noti_date {margin-top: 30px;}
+.privacy_wrap .noti_date li {list-style-type: disc; margin-left:24px; line-height: 1.2;}
+
+/* 반응형 미디어쿼리 */
+@media screen and (max-width:1280px){
+    /*company*/
+    .company_wrap .topArea_txt h3 {font-size:60px;}
+    .company_wrap .topArea_txt p {font-size: 34px;}
+    .raise_goal_wrap .inner_visual p {font-size: 22px;}
+    footer .footer_inner {display: block;}
+    footer .footer_inner .footer_logo_wrap {width:100%; display: block; margin-bottom: 20px;}
+    footer .footer_inner .policy_wrap {width:60%}
+    footer .footer_inner .policy_wrap ul {text-align: right;}
+   
+    /*product*/
+    .product_wrap .main .topArea_txt p {font-size: 34px;}
+    .product_wrap .main .topArea_txt h3 {font-size: 58px;}
+    .benefit_cont .swiper-container .swiper-slide .slide_textbox h5 {font-size: 30px}
+    .count_wrap ul li dt {font-size: 50px;}
+}
+
+@media screen and (max-width:992px){
+    .header_inner h1 {margin-top: 18px;}
+    .header_inner.nav_open {height:250px; box-shadow: 0 3px 5px 1px rgba(0,0,0,0.2);}
+    .header_inner.nav_open h1 {float: none; margin-top:0; text-align: center;}
+    .header_inner.nav_open h1 a {margin-top: 15px;}
+    .company_wrap .header_inner.nav_open h1 a {margin-top: 25px;}
+    .header_inner .nav_open_btn {display: block!important;}
+    .header_inner .gnb {margin-top: 0; display: none;}
+    .header_inner.nav_open .gnb {width:100%;}
+    .header_inner.nav_open .gnb ul li {display: block; text-align: center; padding:20px 0; margin: 0;}
+    .main .inner_visual {padding:0}
+    .inner_visual .imgbox, .inner_visual .textbox {width: 70% !important; display: block; margin:0 auto; text-align: center!important;}
+    .raise_goal_wrap .inner_visual {padding:0 20px}
+    .raise_goal_wrap .inner_visual p {font-size: 18px;}
+    
+    /*product*/
+    .count_wrap ul li dt {font-size:42px;}
+    .product_wrap .main {min-height: 760px;}
+    .product_wrap .main .topArea_txt p {font-size: 24px;}
+    .product_wrap .main .topArea_txt h3 {font-size:46px;}
+    .benefit_cont .slide {padding:0 30px}
+    .benefit {height:auto}
+    .benefit_cont .cont_img {width:100%; text-align: center;}
+    .benefit_cont .cont_txt {width:100%; text-align: center; margin-top: 40px}
+    .benefit_cont .cont_txt h4 {font-size: 36px;}
+    .benefit_cont .cont_txt p {font-size: 24px;}
+    .benefit_cont .slide {padding:0 20px; margin-top: 100px;}
+    .benefit_cont .slide h4 {font-size: 36px;}
+    .benefit_cont .swiper-container {height: auto; margin-top: 30px;}
+    .benefit_cont .swiper-container .swiper-slide .slide_imgbox {width:100%; text-align: center;}
+    .benefit_cont .swiper-container .swiper-slide .slide_textbox {width:100%; margin: 5px 0 30px;}
+    .benefit_cont .swiper-container .swiper-slide .slide_textbox h5 {font-size: 20px; text-align: center;}
+    .swiper-pagination {bottom: 0 !important;}
+    .info01 {margin-top: 40px;}
+    .info01 .inner_visual, .info02 .inner_visual {transform: translateY(1%); }
+    .info01 .inner_visual .textbox h5, .info02 .inner_visual .textbox h5{font-size: 30px;}
+    .info02 {margin: 50px 0;}
+    .info02 .inner_visual {display: flex; flex-direction: column-reverse;}
+    .info02 .inner_visual .textbox {margin-top: 0;}
+    footer .footer_inner {padding:40px 20px 45px}
+    footer .footer_inner .co_info {width:100%; margin-top: 15px;}
+    footer .footer_inner .policy_wrap {width:100%; margin-top: 10px;}
+    footer .footer_inner .policy_wrap ul {text-align: left;}
+    footer .footer_inner .policy_wrap ul li {padding:0 15px 0 0}
+    footer .copyright {margin-left:20px; padding:10px 50px 50px 0}
+}
+@media screen and (max-width:768px) {
+    /*company*/
+    .company_wrap .main {padding-top: 0;}
+    .company_wrap .header_inner {padding:0 25px}
+    .company_wrap .header_inner h1 a {background-size: 160px;}
+    .raise_goal_wrap {padding:120px 0 350px}
+    .raise_goal_wrap .inner_visual h2 {font-size: 32px;}
+    .raise_people_wrap .inner_visual .textbox h5 {font-size: 40px; text-align: center;}
+    
+    
+    /*product*/
+    .product_wrap h1 {margin-top: 24px;}
+    .product_wrap h1 a {background-size: 160px;}
+    .product_wrap .main {min-height: 780px;}
+    .product_wrap .main .inner_visual {transform: translateY(30%)}
+    .product_wrap .main .topArea_txt p {font-size: 20px;}
+    .product_wrap .main .topArea_txt h3 {font-size:40px;}
+    .inner_visual .imgbox, .inner_visual .textbox {width: 100% !important; text-align: center!important;}
+    .count_wrap {padding:60px 0}
+    .count_wrap ul li {width: 100%; padding-bottom: 25px;}
+    .count_wrap ul li dt {font-size: 30px;}
+    .count_wrap ul li dd {padding: 10px 0}
+    .download_wrap a {width:160px}
+    /*.benefit {height:1940px}*/
+    /*.benefit_cont .swiper-container {height:500px}*/
+    .benefit_cont .slide h4, .benefit_cont .cont_txt h4 {font-size: 30px; margin-top: 10px;}
+    .benefit_cont .cont_txt p {font-size: 20px;}
+}
